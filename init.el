@@ -5,7 +5,9 @@
 (add-to-list 'load-path (concat user-emacs-directory "config"))
 (add-to-list 'load-path (concat user-emacs-directory "elisp"))
 (add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/"))
-(load-theme 'molokai)
+(load-theme 'molokai t)
+
+(set-face-attribute 'default nil :height 140)
 
 (require 'cl)
 
@@ -40,3 +42,9 @@
 (require 'init-evil)
 (require 'init-misc)
 (require 'init-bindings)
+
+(require 'init-rinari)
+(require 'init-frame)
+
+(setq ring-bell-function (lambda nil (message "")))
+(setq visible-bell t)
