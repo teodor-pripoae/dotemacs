@@ -19,7 +19,6 @@
 
 
 (if (display-graphic-p)
-  (require-package 'git-gutter+)
   (require-package 'git-gutter+))
 
 (global-git-gutter+-mode)
