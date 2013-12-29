@@ -7,6 +7,7 @@
 (require-package 'project-explorer)
 (require 'project-explorer)
 (setq pe/omit-regex (concat pe/omit-regex "\\|^node_modules$"))
+(global-set-key (kbd "C-x C-,") 'project-explorer-open)
 
 
 (require-package 'ace-jump-mode)
@@ -36,5 +37,7 @@
 (require-package 'rainbow-delimiters)
 (global-rainbow-delimiters-mode)
 
+(global-unset-key (kbd "C-x C-c")) 
+(global-unset-key (kbd "C-x C-z"))
 
 (provide 'init-misc)

@@ -2,9 +2,10 @@
 (when (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 (unless (display-graphic-p) (menu-bar-mode -1))
 
-(add-to-list 'load-path (concat user-emacs-directory "config"))
-(add-to-list 'load-path (concat user-emacs-directory "elisp"))
-(add-to-list 'custom-theme-load-path (concat user-emacs-directory "themes/"))
+(add-to-list 'load-path "~/.emacs.d/config")
+(add-to-list 'load-path "~/.emacs.d/elisp")
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
+;(setq molokai-theme-kit t)
 (load-theme 'molokai t)
 
 (set-face-attribute 'default nil :height 140)
@@ -43,8 +44,14 @@
 (require 'init-misc)
 (require 'init-bindings)
 
-(require 'init-rinari)
+(require 'init-textmate)
+(require 'init-ag)
+(require 'init-ruby)
 (require 'init-frame)
+(require 'init-indent)
+(require 'init-multiple-cursors)
+(require 'init-powerline)
+;(require 'init-tabbar)
 
 (setq ring-bell-function (lambda nil (message "")))
 (setq visible-bell t)
