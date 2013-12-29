@@ -27,4 +27,9 @@
 (add-hook 'ruby-mode-hook 'robe-mode)
 (add-hook 'robe-mode-hook 'robe-ac-setup)
 
+(require-package 'enh-ruby-mode)
+(require 'enh-ruby-mode)
+(add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
+(add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
+
 (provide 'init-ruby)
