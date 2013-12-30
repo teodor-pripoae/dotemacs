@@ -10,6 +10,13 @@
 (global-set-key (kbd "C-x C-,") 'project-explorer-open)
 
 
+(require 'project-root)
+
+(setq project-roots
+    `(("Ruby project"
+       :root-contains-files ("Rakefile"))))
+
+
 (require-package 'ace-jump-mode)
 (require 'ace-jump-mode)
 
