@@ -1,21 +1,6 @@
 (require-package 'rinari)
 (require 'rinari)
 
-;; Rake files are ruby, too, as are gemspecs, rackup files, etc.
-(add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("Gemfile$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("Capfile$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("Vagrantfile$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.thor\\'" . ruby-mode))
-(add-to-list 'auto-mode-alist '("Thorfile\\'" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.rxml$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.rjs$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.irbrc$" . ruby-mode))
-(add-to-list 'auto-mode-alist '("Guardfile\\'" . ruby-mode))
-
 (require-package 'rbenv)
 (require 'rbenv)
 (global-rbenv-mode)
@@ -31,5 +16,20 @@
 (require 'enh-ruby-mode)
 (add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
 (add-to-list 'interpreter-mode-alist '("ruby" . enh-ruby-mode))
+
+;; Rake files are ruby, too, as are gemspecs, rackup files, etc.
+(add-to-list 'auto-mode-alist '("\\.rake$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("Rakefile$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.gemspec$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.ru$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("Gemfile$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("Capfile$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("Vagrantfile$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.thor\\'" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("Thorfile\\'" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rxml$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rjs$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.irbrc$" . enh-ruby-mode))
+(add-to-list 'auto-mode-alist '("Guardfile\\'" . enh-ruby-mode))
 
 (provide 'init-ruby)
