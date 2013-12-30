@@ -1,0 +1,3 @@
+#name : <%= f.label " ... " %>
+# --
+<%= f.label ${title}, ${name} %>$0
