@@ -1,3 +1,5 @@
-#name : <%= render(:partial => ... ) %>
+# This was cloned from a TextMate bundle for yasnippet.
+#name : render :partial => "${1:item}"
+#group : controller
 # --
-<%= render(:partial => "${action}"$0 ) %>
+render :partial => "${1:item}"

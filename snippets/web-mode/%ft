@@ -1,5 +1,6 @@
-#name : <% form_tag(:action => " ... ") do %> ... <% end  %>
+# This was cloned from a TextMate bundle for yasnippet.
+#name :  form_tag('/posts')
+#group : view
 # --
-<% form_tag(:action => "${update}") do %>
-$0
-<% end %>
+  form_tag('/posts')
+  # => <form action="/posts" method="post">
