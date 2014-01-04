@@ -52,6 +52,7 @@
 (require 'init-multiple-cursors)
 (require 'init-powerline)
 ;(require 'init-tabbar)
+(require 'init-css-mode)
 
 (setq ring-bell-function (lambda nil (message "")))
 (setq visible-bell t)
