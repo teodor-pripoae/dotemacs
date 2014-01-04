@@ -7,13 +7,6 @@
 (show-paren-mode)
 
 
-(require-package 'purty-mode)
-(require 'purty-mode)
-(setq purty-regexp-symbol-pairs (mapcar #'purty-enhance-pair '()))
-(purty-add-pair '("\\(\\bfunction\\b\\)" . "λ"))
-(purty-add-pair '("\\(\\breturn\\b\\)" . "◀◁"))
-
-
 (require-package 'diminish)
 (after 'diminish-autoloads
   (diminish 'visual-line-mode)
