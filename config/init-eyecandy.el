@@ -29,7 +29,6 @@
 
 
 (add-hook 'find-file-hook (lambda ()
-                            (purty-mode)
                             (hl-line-mode)
                             (linum-mode)))
 
