@@ -47,4 +47,10 @@
 (global-unset-key (kbd "C-x C-c")) 
 (global-unset-key (kbd "C-x C-z"))
 
+(require-package 'ws-trim)
+(require 'ws-trim)
+(global-ws-trim-mode t)
+(set-default 'ws-trim-level 2)
+(setq ws-trim-global-modes '(guess (not message-mode eshell-mode)))
+
 (provide 'init-misc)
