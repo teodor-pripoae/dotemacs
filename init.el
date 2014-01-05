@@ -5,7 +5,6 @@
 (add-to-list 'load-path "~/.emacs.d/config")
 (add-to-list 'load-path "~/.emacs.d/elisp")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-;(setq molokai-theme-kit t)
 (load-theme 'molokai t)
 
 (set-face-attribute 'default nil :height 140)
@@ -53,6 +52,8 @@
 (require 'init-powerline)
 ;(require 'init-tabbar)
 (require 'init-css-mode)
+(require 'init-yaml-mode)
+(require 'init-docker-mode)
 
 (setq ring-bell-function (lambda nil (message "")))
 (setq visible-bell t)
