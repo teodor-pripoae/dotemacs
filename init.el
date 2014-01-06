@@ -54,6 +54,7 @@
 (require 'init-css-mode)
 (require 'init-yaml-mode)
 (require 'init-docker-mode)
+(require 'init-tramp)
 
 (setq ring-bell-function (lambda nil (message "")))
 (setq visible-bell t)
