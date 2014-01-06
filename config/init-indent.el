@@ -23,4 +23,13 @@
   (function (lambda ()
     (setq evil-shift-width coffee-tab-width))))
 
+(add-hook 'haml-mode-hook
+  (function (lambda ()
+    (setq evil-shift-width haml-mode-indent-level))))
+
+
+(add-hook 'haml-mode-hook
+          '(lambda ()
+             (define-key haml-mode-map "\C-m" 'newline-and-indent)))
+
 (provide 'init-indent)

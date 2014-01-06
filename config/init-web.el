@@ -27,5 +27,8 @@
 (defadvice sgml-delete-tag (after reindent activate)
   (indent-region (point-min) (point-max)))
 
+(require-package 'haml-mode)
+(require 'haml-mode)
+
 
 (provide 'init-web)
