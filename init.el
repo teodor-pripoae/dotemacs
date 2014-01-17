@@ -55,6 +55,7 @@
 (require 'init-yaml-mode)
 (require 'init-docker-mode)
 (require 'init-tramp)
+(require 'init-clojure)
 
 (setq ring-bell-function (lambda nil (message "")))
 (setq visible-bell t)
