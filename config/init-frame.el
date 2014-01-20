@@ -7,15 +7,20 @@
     ;; pick whatever numbers make sense for you
     (if (> (x-display-pixel-width) 1280)
            (add-to-list 'default-frame-alist (cons 'width 120))
-           (add-to-list 'default-frame-alist (cons 'width 80)))
+           (add-to-list 'default-frame-alist (cons 'width 60)))
+
+    (if (> (x-display-pixel-width) 1280)
+           (add-to-list 'default-frame-alist (cons 'height 40))
+           (add-to-list 'default-frame-alist (cons 'height 30)))
+
     ;; for the height, subtract a couple hundred pixels
     ;; from the screen height (for panels, menubars and
     ;; whatnot), then divide by the height of a char to
     ;; get the height we want
-    (add-to-list 'default-frame-alist 
+    (add-to-list 'default-frame-alist
          (cons 'height (/ (- (x-display-pixel-height) 200)
                              (frame-char-height)))))))
 
-(set-frame-size-according-to-resolution)
+;(set-frame-size-according-to-resolution)
 
 (provide 'init-frame)

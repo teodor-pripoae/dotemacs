@@ -6,4 +6,6 @@
           '(lambda ()
              (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
 
+(add-hook 'yaml-mode-hook (lambda () (electric-indent-local-mode -1)))
+
 (provide 'init-yaml-mode)
