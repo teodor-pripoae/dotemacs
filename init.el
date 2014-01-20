@@ -8,6 +8,7 @@
 (load-theme 'molokai t)
 
 (set-face-attribute 'default nil :height 140)
+(set-default-font "Menlo 16")
 
 (require 'cl)
 
