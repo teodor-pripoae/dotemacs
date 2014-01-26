@@ -9,8 +9,13 @@
 (require-package 'robe)
 (require 'robe)
 
+(require 'ruby-additional)
+(require 'ruby-electric)
+
 (add-hook 'ruby-mode-hook 'robe-mode)
 (add-hook 'robe-mode-hook 'robe-ac-setup)
+(add-hook 'robe-mode-hook 'ruby-electric-mode)
+(add-hook 'robe-mode-hook 'auto-indent-mode)
 
 ;(require-package 'enh-ruby-mode)
 ;(require 'enh-ruby-mode)
@@ -39,6 +44,7 @@
   (local-set-key [f1] 'yari))
 
 (add-hook 'ruby-mode-hook 'ri-bind-key)
+(add-hook 'robe-mode-hook 'robe-ac-setup)
 
 (define-key rinari-minor-mode-map (kbd "C-c t") 'rinari-find-test)
 (define-key rinari-minor-mode-map (kbd "C-c m") 'rinari-find-model)
