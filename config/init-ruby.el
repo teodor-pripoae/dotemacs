@@ -45,6 +45,7 @@
 
 (add-hook 'ruby-mode-hook 'ri-bind-key)
 (add-hook 'robe-mode-hook 'robe-ac-setup)
+(add-hook 'ruby-mode-hook 'autopair-mode)
 
 (define-key rinari-minor-mode-map (kbd "C-c t") 'rinari-find-test)
 (define-key rinari-minor-mode-map (kbd "C-c m") 'rinari-find-model)
