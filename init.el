@@ -59,6 +59,7 @@
 (require 'init-tramp)
 (require 'init-clojure)
 (require 'init-python)
+(require 'init-refactoring)
 
 (setq ring-bell-function (lambda nil (message "")))
 (setq visible-bell t)
