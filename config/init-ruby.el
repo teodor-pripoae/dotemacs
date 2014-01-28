@@ -10,6 +10,7 @@
 (require 'robe)
 
 (add-hook 'ruby-mode-hook 'robe-mode)
+(add-hook 'ruby-mode-hook 'auto-indent-mode)
 (add-hook 'robe-mode-hook 'robe-ac-setup)
 
 ;(require-package 'enh-ruby-mode)
