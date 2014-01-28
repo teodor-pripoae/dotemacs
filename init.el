@@ -8,7 +8,8 @@
 (load-theme 'molokai t)
 
 (set-face-attribute 'default nil :height 140)
-(set-default-font "Menlo 16")
+
+(add-to-list 'default-frame-alist '(font . "Menlo-16"))
 
 (require 'cl)
 
@@ -19,7 +20,7 @@
 (require 'init-eyecandy)
 
 (require 'init-editor)
-;; (require 'init-smartparens)
+(require 'init-smartparens)
 (require 'init-autopair)
 
 (require 'init-yasnippet)
@@ -57,6 +58,8 @@
 (require 'init-docker-mode)
 (require 'init-tramp)
 (require 'init-clojure)
+(require 'init-python)
+(require 'init-refactoring)
 
 (setq ring-bell-function (lambda nil (message "")))
 (setq visible-bell t)

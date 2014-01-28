@@ -3,4 +3,4 @@
 	url = https://github.com/bmaland/yasnippet-ruby-mode
 [submodule "elisp/rails-reloaded"]
 	path = elisp/rails-reloaded
-	url = https://github.com/r0man/emacs-rails-reloaded.git
+	url = https://github.com/r0man/emacs-rails-reloaded
