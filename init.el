@@ -60,6 +60,7 @@
 (require 'init-clojure)
 (require 'init-python)
 (require 'init-refactoring)
+(require 'init-imenu)
 
 (setq ring-bell-function (lambda nil (message "")))
 (setq visible-bell t)
