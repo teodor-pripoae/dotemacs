@@ -5,7 +5,6 @@
 (add-to-list 'load-path "~/.emacs.d/config")
 (add-to-list 'load-path "~/.emacs.d/elisp")
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
-(load-theme 'molokai t)
 
 (set-face-attribute 'default nil :height 140)
 
@@ -14,6 +13,15 @@
 (require 'cl)
 
 (require 'init-packages)
+
+(require-package 'color-theme-solarized)
+(require-package 'color-theme-twilight)
+;(color-theme-twilight)
+;(load-theme 'molokai t)
+;(load-file "~/.emacs.d/themes/color-theme-idle-fingers.el")
+;(color-theme-idle-fingers)
+(load-theme 'solarized-light t)
+
 (require 'init-util)
 (require 'init-core)
 (require 'init-org)
