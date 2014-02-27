@@ -44,7 +44,7 @@
 (require-package 'rainbow-delimiters)
 (global-rainbow-delimiters-mode)
 
-(global-unset-key (kbd "C-x C-c")) 
+(global-unset-key (kbd "C-x C-c"))
 (global-unset-key (kbd "C-x C-z"))
 
 (require-package 'ws-trim)
@@ -52,5 +52,7 @@
 (global-ws-trim-mode t)
 (set-default 'ws-trim-level 2)
 (setq ws-trim-global-modes '(guess (not message-mode eshell-mode)))
+
+(setq scroll-margin 4)
 
 (provide 'init-misc)
