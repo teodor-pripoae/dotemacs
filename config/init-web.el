@@ -23,6 +23,8 @@
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
 (add-hook 'web-mode-hook 'auto-indent-mode)
+(add-hook 'handlebars-mode-hook 'auto-indent-mode)
+(add-hook 'mustache-mode-hook 'auto-indent-mode)
 
 ;; indent after deleting a tag
 (defadvice sgml-delete-tag (after reindent activate)

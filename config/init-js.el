@@ -14,6 +14,10 @@
 (js2r-add-keybindings-with-prefix "C-c C-m")
 
 
+(require-package 'json-mode)
+;(add-hook 'json-mode-hook)
+
+
 (require-package 'tern)
 (require-package 'tern-auto-complete)
 (add-hook 'js2-mode-hook (lambda () (tern-mode t)))
@@ -22,5 +26,11 @@
     (require 'tern-auto-complete)
     (tern-ac-setup)))
 
+
+(require-package 'handlebars-mode)
+(require 'handlebars-mode)
+
+(require-package 'mustache-mode)
+(require 'mustache-mode)
 
 (provide 'init-js)
