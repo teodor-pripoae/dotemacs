@@ -19,6 +19,7 @@
 
 (require-package 'ace-jump-mode)
 (require 'ace-jump-mode)
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
 
 (require-package 'expand-region)
@@ -44,7 +45,7 @@
 (require-package 'rainbow-delimiters)
 (global-rainbow-delimiters-mode)
 
-(global-unset-key (kbd "C-x C-c")) 
+(global-unset-key (kbd "C-x C-c"))
 (global-unset-key (kbd "C-x C-z"))
 
 (require-package 'ws-trim)
@@ -52,5 +53,7 @@
 (global-ws-trim-mode t)
 (set-default 'ws-trim-level 2)
 (setq ws-trim-global-modes '(guess (not message-mode eshell-mode)))
+
+(setq scroll-margin 4)
 
 (provide 'init-misc)
