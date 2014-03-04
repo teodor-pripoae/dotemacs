@@ -23,4 +23,7 @@
 
 (global-git-gutter+-mode)
 
+(require-package 'git-messenger)
+(require 'git-messenger)
+
 (provide 'init-git)
