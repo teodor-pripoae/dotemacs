@@ -56,4 +56,10 @@
 
 (setq scroll-margin 4)
 
+(defun touch ()
+     "updates mtime on the file for the current buffer"
+     (interactive)
+     (shell-command (concat "touch " (shell-quote-argument (buffer-file-name))))
+     (clear-visited-file-modtime))
+
 (provide 'init-misc)
