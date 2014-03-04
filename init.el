@@ -17,10 +17,10 @@
 (require-package 'color-theme-solarized)
 (require-package 'color-theme-twilight)
 ;(color-theme-twilight)
-;(load-theme 'molokai t)
+(load-theme 'molokai t)
 ;(load-file "~/.emacs.d/themes/color-theme-idle-fingers.el")
 ;(color-theme-idle-fingers)
-(load-theme 'solarized-light t)
+;; (load-theme 'solarized-light t)
 
 (require 'init-util)
 (require 'init-core)
@@ -69,6 +69,8 @@
 (require 'init-python)
 (require 'init-refactoring)
 (require 'init-imenu)
+(require 'init-hn)
+(require 'init-elscreen)
 
 (setq ring-bell-function (lambda nil (message "")))
 (setq visible-bell t)
