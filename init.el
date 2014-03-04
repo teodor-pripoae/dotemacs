@@ -66,6 +66,8 @@
 (require 'init-docker-mode)
 (require 'init-tramp)
 (require 'init-clojure)
+(require 'init-go-mode)
+(require 'init-erlang)
 (require 'init-python)
 (require 'init-refactoring)
 (require 'init-imenu)
