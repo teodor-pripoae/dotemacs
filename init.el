@@ -16,6 +16,9 @@
 
 (require-package 'color-theme-solarized)
 (require-package 'color-theme-twilight)
+(require-package 'zenburn-theme)
+(require-package 'github-theme)
+(require-package 'heroku-theme)
 ;(color-theme-twilight)
 (load-theme 'molokai t)
 ;(load-file "~/.emacs.d/themes/color-theme-idle-fingers.el")
@@ -71,6 +74,7 @@
 (require 'init-imenu)
 (require 'init-hn)
 (require 'init-elscreen)
+(require 'init-music)
 
 (setq ring-bell-function (lambda nil (message "")))
 (setq visible-bell t)
