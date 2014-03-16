@@ -26,4 +26,9 @@
 (require-package 'git-messenger)
 (require 'git-messenger)
 
+(require-package 'gitconfig-mode)
+(require 'gitconfig-mode)
+(require-package 'gitignore-mode)
+(require 'gitignore-mode)
+
 (provide 'init-git)
