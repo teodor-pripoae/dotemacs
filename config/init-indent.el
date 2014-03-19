@@ -10,6 +10,7 @@
 (setq ruby-indent-level 2)
 (setq css-indent-offset 2)
 (setq coffee-tab-width 2)
+(setq js-indent-level 2)
 
 (add-hook 'ruby-mode-hook
   (function (lambda ()
@@ -31,5 +32,9 @@
 (add-hook 'haml-mode-hook
           '(lambda ()
              (define-key haml-mode-map "\C-m" 'newline-and-indent)))
+
+(add-hook 'js2-mode-hook
+  (function (lambda ()
+    (setq evil-shift-width js-indent-level))))
 
 (provide 'init-indent)

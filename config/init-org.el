@@ -10,4 +10,6 @@
 
 (setq org-plantuml-jar-path (expand-file-name "~/plantuml.jar"))
 
+(add-to-list 'auto-mode-alist '("TODO\\'" . org-mode))
+
 (provide 'init-org)
