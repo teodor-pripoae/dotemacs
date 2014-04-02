@@ -77,6 +77,7 @@
 (require 'init-hn)
 (require 'init-elscreen)
 (require 'init-music)
+(require 'init-erc)
 
 (setq ring-bell-function (lambda nil (message "")))
 (setq visible-bell t)
