@@ -6,4 +6,4 @@
 	url = https://github.com/r0man/emacs-rails-reloaded
 [submodule "elisp/distel"]
 	path = elisp/distel
-	url = git@github.com:massemanet/distel.git
+	url = https://github.com/massemanet/distel.git
