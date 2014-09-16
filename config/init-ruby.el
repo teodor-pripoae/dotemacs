@@ -25,6 +25,7 @@
 
 ; Rake files are ruby, too, as are gemspecs, rackup files, etc.
 (add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
+(add-to-list 'auto-mode-alist '("\\.rabl$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Rakefile$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.gemspec$" . ruby-mode))
 (add-to-list 'auto-mode-alist '("\\.ru$" . ruby-mode))
@@ -68,5 +69,8 @@
 
 (eval-after-load 'rspec-mode
  '(rspec-install-snippets))
+
+(require-package 'ruby-hash-syntax)
+(require 'ruby-hash-syntax)
 
 (provide 'init-ruby)

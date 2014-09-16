@@ -11,6 +11,8 @@
 (setq css-indent-offset 2)
 (setq coffee-tab-width 2)
 (setq js-indent-level 2)
+(setq web-mode-indent-level 2)
+(setq elixir-mode-indent-level 2)
 
 (add-hook 'ruby-mode-hook
   (function (lambda ()
@@ -28,6 +30,9 @@
   (function (lambda ()
     (setq evil-shift-width haml-mode-indent-level))))
 
+(add-hook 'web-mode-hook
+  (function (lambda ()
+    (setq evil-shift-width web-mode-indent-level))))
 
 (add-hook 'haml-mode-hook
           '(lambda ()
@@ -36,5 +41,9 @@
 (add-hook 'js2-mode-hook
   (function (lambda ()
     (setq evil-shift-width js-indent-level))))
+
+(add-hook 'elixir-mode-hook
+  (function (lambda ()
+    (setq evil-shift-width elixir-mode-indent-level))))
 
 (provide 'init-indent)
